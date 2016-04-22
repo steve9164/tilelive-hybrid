@@ -53,6 +53,8 @@ function Hybrid(uri, callback) {
         config = JSON.parse(json);
         var promises = [];
         return when.map(config.sources, function(item) {
+            if (item.minZ === undefined) item.minZ = 0;
+            if (item.maxZ === undefined) item.maxZ = Infinity;
             console.log('Adding ' + item.source);
             // Add each source to _sources
             return nodefn.call(tilelive.load, item.source).then(function(source) {
