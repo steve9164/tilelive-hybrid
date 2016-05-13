@@ -7,7 +7,7 @@
     "when": "^3.7.7"
   },
   "description": "tilelive-hybrid\r ---------------\r Implements the tilelive API for serving tiles from multiple tilelive sources depending on the requested zoom level. Ideal for vector tile sources where some zoom levels use pre-generated tiles and other zoom levels generate tiles from a mapnik data source",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "devDependencies": {},
   "repository": {
